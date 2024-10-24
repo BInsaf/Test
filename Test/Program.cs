@@ -20,7 +20,14 @@ namespace Test
                 Console.WriteLine(c);
                 Console.WriteLine(x);
                 Console.WriteLine(test());
-                Console.ReadKey();
+
+            var p = new Person("Eric Arthur Blair");
+            Console.WriteLine("p: " + p);
+
+            var ints = new int[] { 1, 2, 3 };
+            Console.WriteLine("ints: " + ints);
+
+            Console.ReadKey();
 
             }
 
@@ -35,7 +42,19 @@ namespace Test
             {
                 return a > a ? a : b;
             }
+        class Person
+        {
+            private string Name;
 
+            public Person(string name)
+            {
+                this.Name = name;
+            }
         }
+
+
     }
+
+
+}
 
