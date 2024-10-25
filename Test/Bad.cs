@@ -8,8 +8,14 @@ namespace Test
 {
     public class Bad
     {
-        void M()
+        void DoPrint(object o)
         {
+            Console.WriteLine(o.ToString());
+        }
+        public void M()
+        {
+            DoPrint("Hello");
+            DoPrint(null);
             Logger.Log("Hello, World!");
         }
 
